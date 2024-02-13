@@ -1,48 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Simple Form</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-  }
-  form {
-    margin: 0 auto;
-    max-width: 400px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-  }
-  @media screen and (max-width: 500px) {
-    body {
-      background-color: green;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table,th,td{
+      border:1px solid black;
+      border-collapse: collapse;
     }
-  }
-  @media screen and (min-width: 600px) {
-    body {
-      background-color: orange;
-    }
-  }
-</style>
+  </style>
 </head>
 <body>
-
-<form>
-  <label for="firstname">First Name:</label>
-  <input type="text" id="firstname" name="firstname" required><br>
-  <label for="middlename">Middle Name:</label>
-  <input type="text" id="middlename" name="middlename"><br>
-  <label for="lastname">Last Name:</label>
-  <input type="text" id="lastname" name="lastname" required><br>
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" required><br>
-  <label for="password">Password:</label>
-  <input type="password" id="password" name="password" required><br>
-</form>
-
+  <table>
+   <thead>
+    <th>state of health</th>
+    <th colspan="2">fasting value</th>
+    <th>after remaining</th>
+   </thead>
+   <thead>
+    <th>  </th>
+    <th>minimum</th>
+    <th>normal</th>
+    <th>2 hours of eating</th>
+    </thead>
+   <tbody>
+    <tr>
+      <td>healthy</td>
+      <td>70</td>
+      <td>100</td>
+      <td>less than 140</td>
+    </tr>
+        <tr>
+            <td>Pre-diabetes</td>
+            <td>101</td>
+            <td>126</td>
+            <td>140 to 200</td>
+          </tr>
+          <tr>
+            <td>diabetes</td>
+            <td>more than 126</td>
+            <td>Not applicable</td>
+            <td>more than 200</td>
+          </tr>
+   </tbody>
+  </table>
 </body>
 </html>
